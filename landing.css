@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --font-primary: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+/* !Registration Page Styling */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 40rem;
+  width: 20rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  display: block;
+  font-size: 0.8rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 2px solid #d8dadc;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #808080;
+  opacity: 1;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-radio input {
+  display: none;
+}
+.custom-radio span {
+  display: inline-block;
+  margin-top: 5px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-radio input:checked + span::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btnR button {
+  width: 18rem;
+  background-color: #000000;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border: none;
+  font-size: clamp(1rem, 3vw, 1rem);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
